@@ -1,0 +1,467 @@
+body {
+    background-color: rgb(219, 219, 221);
+}
+
+a {
+    display: block;
+    color: rgb(54, 118, 165);
+    font-weight: 700;
+
+    &:hover {
+        color: rgb(137, 137, 137);
+    }
+}
+
+
+// kvtopBN
+.kvtopBN {
+    .kvtopBN-bg {
+        width: 100%;
+        background-image: url(../images/kv-bg.jpg);
+        background-size: auto 100%;
+        background-position: top center;
+        display: flex;
+        justify-content: center;
+
+        .list {
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            .list-left {
+                width: 29%;
+            }
+
+            .list-center {
+                width: 55%;
+                position: absolute;
+                left: 27%;
+            }
+
+            .list-right {
+                width: 22.5%;
+            }
+        }
+    }
+}
+
+.m-kvtopBN-bg {
+    width: 100%;
+    background-image: url(../images/m-kv-bg.jpg);
+    background-size: auto 100%;
+    background-position: top center;
+
+    .list {
+        display: flex;
+        flex-direction: column;
+
+        div:last-child {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+
+// 第二區塊
+.bg-tiles {
+    width: 100%;
+    background-image: url(../images/bg-tiles.jpg);
+    background-size: 2000px;
+    background-position: top center;
+    display: flex;
+
+    .item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .list {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 49%;
+
+            .list-hd {
+                z-index: 99;
+                width: 100%;
+                position: relative;
+                top: 6%;
+                text-align: center;
+
+                a {
+                    width: 55%;
+                }
+            }
+
+            .list-bd-a {
+                width: 100%;
+                background-image: url(../images/a-bg.png);
+                background-size: 100% 100%;
+                background-position: top center;
+                display: flex;
+                flex-wrap: wrap;
+
+                a:nth-child(1) {
+                    width: 60%;
+                }
+
+                a:nth-child(2) {
+                    width: 40%;
+                }
+
+                a:nth-child(3) {
+                    width: 45%;
+                }
+
+                a:nth-child(4) {
+                    width: 55%;
+                }
+            }
+
+            .list-bd-b {
+                width: 100%;
+                background-image: url(../images/b-bg.png);
+                background-size: 100% 100%;
+                background-position: top center;
+                display: flex;
+                flex-wrap: wrap;
+
+                a:nth-child(1) {
+                    width: 55%;
+                }
+
+                a:nth-child(2) {
+                    width: 45%;
+                }
+
+                a:nth-child(3) {
+                    width: 49%;
+                }
+
+                a:nth-child(4) {
+                    width: 51%;
+                }
+            }
+
+            .list-bd-c {
+                width: 100%;
+                background-image: url(../images/c-bg.png);
+                background-size: 100% 100%;
+                background-position: top center;
+                display: flex;
+                flex-wrap: wrap;
+
+                a:nth-child(1),
+                a:nth-child(3) {
+                    width: 52%;
+                }
+
+                a:nth-child(2),
+                a:nth-child(4) {
+                    width: 48%;
+                }
+            }
+
+            .list-bd-d {
+                width: 100%;
+                background-image: url(../images/d-bg.png);
+                background-size: 100% 100%;
+                background-position: top center;
+                display: flex;
+                flex-wrap: wrap;
+
+                a:nth-child(1),
+                a:nth-child(3) {
+                    width: 52%;
+                }
+
+                a:nth-child(2),
+                a:nth-child(4) {
+                    width: 48%;
+                }
+            }
+        }
+    }
+
+    .item-space {
+        margin-top: -30px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .item .list {
+            margin-top: -20px;
+        }
+
+        .item-space {
+            margin-top: 0px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bg-tiles {
+        background-size: 1000px;
+
+        .item {
+            flex-wrap: wrap;
+
+            .list {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+.productSetprice .priceBox .oriprice {
+    text-decoration: none;
+    padding-right: 10px;
+    color: red;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    /*行數*/
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.productSetprice .priceBox .oriprice-grey {
+    text-decoration: line-through;
+    padding-right: 10px;
+    color: #999;
+}
+
+
+// 第三區塊
+.sky {
+    width: 100%;
+    background-image: url(../images/bg-sky.jpg);
+    background-size: auto 100%;
+    background-position: top center;
+
+    .pop {
+        width: 100%;
+        background-image: url(../images/bg-sky-round.png);
+        background-size: 100%;
+        background-position: top center;
+
+        .item {
+            width: 100%;
+            display: flex;
+
+            div:nth-child(1) {
+                width: 37%;
+            }
+
+            div:nth-child(2) {
+                width: 32%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            div:nth-child(3) {
+                width: 31%;
+            }
+        }
+    }
+
+    .m-sky {
+        width: 100%;
+
+        .item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .list-hd {
+                width: 100%;
+                display: flex;
+
+                div {
+                    width: 50%;
+                }
+            }
+
+            .list-bd {
+                width: 100%;
+                display: flex;
+
+                a {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .bg-white {
+        margin: 0 10px;
+        border: 5px solid rgb(251, 92, 0);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sky {
+        width: 100%;
+        background: url(../images/m-bg-sky.jpg) no-repeat;
+        background-size: 100% auto;
+        background-position: top center;
+    }
+}
+
+
+// 第四區塊
+.comment {
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 19px;
+    background-color: rgb(254, 255, 147);
+}
+
+.bg-green {
+    width: 100%;
+    background-image: url(../images/bg-green.jpg);
+    background-size: auto 100%;
+    background-position: top center;
+
+    .item {
+        width: 100%;
+        display: flex;
+
+        div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            width: 36%;
+        }
+
+        div:nth-child(2) {
+            width: 36%;
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+                a:first-child {
+                    width: 42%;
+                }
+
+                a:last-child {
+                    width: 58%;
+                }
+            }
+        }
+
+        div:nth-child(3) {
+            width: 28%;
+        }
+    }
+}
+
+.m-bg-green {
+    width: 100%;
+    background-image: url(../images/m-bg-green.jpg);
+    background-size: 100% auto;
+    background-position: top center;
+
+    .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .list-hd {
+            width: 100%;
+            display: flex;
+
+            div {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    width: 100%;
+                }
+            }
+        }
+
+        .list-bd {
+            width: 100%;
+            display: flex;
+
+            a {
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+.more {
+    display: flex;
+    justify-content: center;
+
+    .more-botton {
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+
+        a {
+            padding: 10px 20px;
+            font-size: 18pt;
+            background-color: white;
+            color: rgb(54, 118, 165);
+            border: 2px solid rgb(147, 204, 105);
+            border-radius: 20pt;
+            box-shadow: 3px 5px #285378;
+
+            &:hover {
+                background-color: rgb(54, 118, 165);
+                color: white;
+                border: 2px solid rgb(147, 204, 105);
+                box-shadow: 3px 5px #285378;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .more {
+        .more-botton a {
+            padding: 7px 17px;
+            font-size: 19px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .more {
+        .more-botton {
+            margin: 0 10px;
+
+            a {
+                padding: 5px 10px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+.methodBox {
+    a {
+        display: inline-block;
+        color: rgb(54, 118, 165);
+
+        &:hover {
+            color: red;
+        }
+    }
+}
